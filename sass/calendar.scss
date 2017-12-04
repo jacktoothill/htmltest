@@ -892,7 +892,7 @@ body{
         }
         &.unopened{
             .cal-num{
-                color: #645c59;
+                color: #ed1b2f;
             }
             .cal-btn{
                 display: none;
@@ -901,7 +901,6 @@ body{
                 display: block;
             }
             &:active{
-                color: darkred;
                 filter: opacity(0.5);
             }
         }
