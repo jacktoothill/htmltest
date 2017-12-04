@@ -901,6 +901,7 @@ body{
                 display: block;
             }
             &:active{
+                color: darkred;
                 filter: opacity(0.5);
             }
         }
