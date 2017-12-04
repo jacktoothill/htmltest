@@ -1,0 +1,1258 @@
+html, body {
+  position: relative;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  overflow: auto;
+}
+
+body{
+    font-family: 'BaskervilleMT';
+    color: #645c59;
+}
+
+// Animating falling snowflakes
+@keyframes fall-one{
+    0%{top: -100px}
+    100%{top: 100%}
+}
+
+@keyframes fall-two{
+    0%{top: -250px;}
+    100%{top: 100%;}
+}
+
+@keyframes fall-three{
+    0%{top: -150px}
+    100%{top: 100%}
+}
+
+.snowflake{
+    z-index: 10;
+    position: absolute;
+    width: 30px;
+    left: 120px;
+    top: -100px;
+    animation: fall-one 25s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+.snowflake2{
+    z-index: 8;
+    position: absolute;
+    width: 40px;
+    left: 30px;
+    top: -100px;
+    animation: fall-two 24s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+.snowflake3{
+    z-index: 6;
+    position: absolute;
+    right: 10px;
+    width: 10px;
+    top: -100px;
+    animation: fall-three 18s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+.snowflake4{
+    z-index: 6;
+    position: absolute;
+    left: 100px;
+    width: 10px;
+    top: -100px;
+    animation: fall-one 22s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+
+.snowflake5{
+    z-index: 6;
+    position: absolute;
+    right: 200px;
+    width: 10px;
+    top: -100px;
+    animation: fall-two 20s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+.snowflake6{
+    z-index: 6;
+    position: absolute;
+    right: 100px;
+    width: 40px;
+    top: -100px;
+    animation: fall-three 26s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+
+.snowflake7{
+    z-index: 6;
+    position: absolute;
+    left: 100px;
+    width: 30px;
+    top: -500px;
+    animation: fall-two 36s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+.snowflake8{
+    z-index: 6;
+    position: absolute;
+    right: 180px;
+    width: 40px;
+    top: -500px;
+    animation: fall-one 45s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+.snowflake9{
+    z-index: 6;
+    position: absolute;
+    right: 40px;
+    width: 20px;
+    top: -500px;
+    animation: fall-three 42s linear infinite;
+    img{
+        width: 100%;
+    }
+}
+
+.rib-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    img{
+        width: 90px;
+    }
+}
+
+.rib-side{
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    top: 40%;
+    img{
+        width: 30px;
+    }
+}
+
+.rib-bot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    img{
+        width: 55px;
+    }
+}
+
+.calendar-main{
+    position: relative;
+    height: 100%;
+    min-height: 1350px;
+    width: 100%;
+    background: url('../img/calendar-bg.jpg') no-repeat center bottom;
+    background-size: cover;
+}
+.sub-eng{
+    margin-top: 10px;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+.bottom-sub{
+    margin-top: 30px;
+    a{
+        color: #645c59;
+        font-weight: bold;
+    }
+}
+.leaves-img{
+    img{
+        width: 200px;
+    }
+}
+
+.top-text{
+    .advent-cn{
+        font-size: 22px;
+    }
+    .advent-eng{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .sub-cn{
+        font-size: 14px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.divider{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    img{
+        width: 60px;
+    }
+}
+
+
+.cal-popup.funfact-popup{
+    .pb-0{
+        margin-bottom: 0;
+    }
+    .pop-title{
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 0
+    }
+    .rose-pop{
+        img{
+            margin-top: 0;
+        }
+    }
+    .adv-img{
+        margin-bottom: 0px;
+        max-width: 80%;
+    }
+    .quote-sec{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        &.quote-sec-cn{
+            .quote{
+                font-size: 13px;
+                font-style: italic;
+            }
+        }
+        img{
+            display: inline-block;
+            width: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .q-1{
+            left: 20px;
+        }
+        .q-2{
+            right: 20px;
+        }
+        .quote{
+            display: inline-block;
+            margin-bottom: 0;
+            font-family: 'tesla';
+            font-size: 17px;
+            letter-spacing: 0.025em;
+        }
+    }
+    .para-eng{
+        padding: 0 30px;
+
+    }
+    .main-fun-text{
+        .para-eng{
+            margin-bottom: 20px;
+        }
+    }
+    .fun-img{
+        padding: 0 20px;
+        margin-bottom: 40px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .qr.lsg-qr{
+        margin-top: 10px;
+    }
+    .qr{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .row{
+        margin: 0;
+    }
+    .xmas-phone{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.cal-popup.cape-popup{
+    .pb-0{
+        margin-bottom: 0;
+    }
+    .pop-title{
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        line-height: 22px;
+    }
+    .rose-pop{
+        img{
+            margin-top: 0;
+        }
+    }
+    .adv-img{
+        margin-bottom: 30px;
+        max-width: 80%;
+    }
+    .quote-sec{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        &.quote-sec-cn{
+            .quote{
+                font-size: 13px;
+                font-style: italic;
+            }
+        }
+        img{
+            display: inline-block;
+            width: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .q-1{
+            left: 20px;
+        }
+        .q-2{
+            right: 20px;
+        }
+        .quote{
+            display: inline-block;
+            margin-bottom: 0;
+            font-family: 'tesla';
+            font-size: 17px;
+            letter-spacing: 0.025em;
+        }
+    }
+    .para-eng{
+        padding: 0 30px;
+
+    }
+    .main-fun-text{
+        .para-eng{
+            margin-bottom: 20px;
+        }
+    }
+    .fun-img{
+        padding: 0 20px;
+        margin-bottom: 40px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .qr.lsg-qr{
+        margin-top: 10px;
+    }
+    .qr{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .row{
+        margin: 0;
+    }
+    .xmas-phone{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+.partner-btm{
+    img{
+        width: 50px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .para-eng.small-text{
+        font-size: 10px;
+    }
+}
+.cal-popup.festive-spirit-popup{
+    .pb-0{
+        margin-bottom: 0;
+    }
+    .pop-title{
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        line-height: 21px;
+    }
+    .rose-pop{
+        img{
+            margin-top: 0;
+        }
+    }
+    .adv-img{
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+    .motif{
+        margin-bottom: 20px;
+        img{
+            width: 50px;
+        }
+    }
+    .intro-txt p{
+        margin-bottom: 20px;
+    }
+    .small-title{
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+    .cocktail-title{
+        margin-bottom: 20px;
+    }
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+    .quote-sec{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        &.quote-sec-cn{
+            .quote{
+                font-size: 13px;
+                font-style: italic;
+            }
+        }
+        img{
+            display: inline-block;
+            width: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .q-1{
+            left: 20px;
+        }
+        .q-2{
+            right: 20px;
+        }
+        .quote{
+            display: inline-block;
+            margin-bottom: 0;
+            font-family: 'tesla';
+            font-size: 17px;
+            letter-spacing: 0.025em;
+        }
+    }
+    .para-eng{
+        padding: 0 40px;
+
+    }
+    .main-fun-text{
+        .para-eng{
+            margin-bottom: 20px;
+        }
+    }
+    .fun-img{
+        padding: 0 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .recipe-list{
+        margin-bottom: 20px;
+    }
+    .qr{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .row{
+        margin: 0;
+    }
+    .xmas-phone{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.cal-popup.emirates-popup{
+    .pb-0{
+        margin-bottom: 0;
+    }
+    .pop-title{
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 0
+    }
+    .rose-pop{
+        img{
+            margin-top: 0;
+        }
+    }
+    .adv-img{
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+    .offer-pop{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        img{
+            max-width: 110px;
+        }
+    }
+    .qr{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .row{
+        margin: 0;
+    }
+    .pop-list{
+        margin-top: 0px;
+        font-size: 10px;
+        padding: 0 20px;
+        text-align: left;
+        ul{
+            padding-left: 0;
+        }
+    }
+    .xmas-phone{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.cal-popup.ps-popup{
+    .pb-0{
+        margin-bottom: 0;
+    }
+    .pop-title{
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 0
+    }
+    .rose-pop{
+        img{
+            margin-top: 0;
+        }
+    }
+    .adv-img{
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+    .offer-pop{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        img{
+            max-width: 110px;
+        }
+    }
+    .qr{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .row{
+        margin: 0;
+    }
+    .para-eng{
+        padding: 0 30px;
+    }
+    .pop-list{
+        margin-top: 20px;
+        font-size: 10px;
+        padding: 0 20px;
+        text-align: left;
+        ul{
+            padding-left: 0;
+        }
+    }
+    .xmas-phone{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.cal-popup.sr-popup{
+    .pb-0{
+        margin-bottom: 0;
+    }
+    .pop-title{
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        line-height: 22px;
+    }
+    .rose-pop{
+        img{
+            margin-top: 0;
+        }
+    }
+    .logo-pop{
+        img{
+            max-width: 130px;
+        }
+    }
+    .adv-img{
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+    .offer-pop{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        img{
+            max-width: 110px;
+        }
+    }
+    .qr{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .row{
+        margin: 0;
+    }
+    .para-eng{
+        padding: 0 30px;
+    }
+    .pop-list{
+        margin-top: 20px;
+        font-size: 10px;
+        padding: 0 20px;
+        text-align: left;
+        ul{
+            padding-left: 0;
+        }
+    }
+    .xmas-phone{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.cal-popup.paulsmith-popup{
+    .pb-0{
+        margin-bottom: 0;
+    }
+    .pop-title{
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 0
+    }
+    .rose-pop{
+        img{
+            margin-top: 0;
+        }
+    }
+    .adv-img{
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+    .offer-pop{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .qr{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .row{
+        margin: 0;
+    }
+    .para-eng{
+        padding: 0 30px;
+    }
+    .pop-list{
+        margin-top: 20px;
+        font-size: 10px;
+        padding: 0 20px;
+        text-align: left;
+        ul{
+            padding-left: 0;
+        }
+    }
+    .xmas-phone{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.cal-popup.roseonly-popup{
+    .pb-0{
+        margin-bottom: 0;
+    }
+    .pop-title{
+        font-size: 22px;
+        margin-bottom: 0
+    }
+    .rose-pop{
+        img{
+            margin-top: 0;
+        }
+    }
+    .adv-img{
+        margin-bottom: 20px;
+    }
+    .offer-pop{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        img{
+            max-width: 110px;
+        }
+    }
+    .qr{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .row{
+        margin: 0;
+    }
+    .pop-list{
+        margin-top: 20px;
+        font-size: 10px;
+        padding: 0 20px;
+        text-align: left;
+        ul{
+            padding-left: 0;
+        }
+    }
+    .xmas-phone{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.cal-popup.mfvd-popup{
+    .para-eng{
+        padding: 0 40px;
+    }
+    .logo-pop{
+        img{
+            max-width: 150px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+    }
+    .offer-pop{
+        img{
+            max-width: 120px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .adv-img{
+        margin-bottom: 20px;
+    }
+    .qr{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .pb-30{
+        margin-bottom: 30px;
+    }
+    .pb-20{
+        margin-bottom: 20px;
+    }
+    .oo-qr{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .xmas-phone{
+        img{
+            width: 100%;
+        }
+    }
+    .logo-btm{
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    .divider-20{
+        margin-bottom: 20px;
+    }
+    .pb-0{
+        margin-bottom: 0;
+    }
+}
+
+.cal-popup{
+    display: none;
+    top: 20px;
+    font-size: 22px;
+    background: #fff;
+    border: solid 5px #b7babb;
+    position: fixed;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+    overflow: scroll;
+    z-index: 3;
+    max-width: 500px;
+    margin: auto;
+    .close-btn{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        &:hover{
+            cursor: pointer;
+        }
+        img{
+            width: 15px;
+            position: fixed;
+            right: 40px;
+            top: 40px;
+        }
+    }
+    .logo-main{
+        margin-bottom: 30px;
+    }
+    .cn-sub{
+        margin-bottom: 0;
+    }
+    .eng-sub{
+        margin-top: 5px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .para-eng{
+        font-size: 14px;
+        padding: 0 50px
+    }
+    .para-cn{
+        font-size: 14px;
+        padding: 0 30px
+    }
+    .adv-img{
+        margin-top: 20px;
+        max-width: 70%;
+    }
+    .qr{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 90px;
+    }
+    .pop-bot-cn{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .pop-bot-eng{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .xmas-phone img{
+      width: 100%;
+    }
+}
+
+.calendar-grid{
+    max-width: 375px;
+    margin: auto;
+    .cal-sq{
+        position: relative;
+        color: #aba2a0;
+        .unopen-btn{
+            display: none;
+        }
+        &.unopened{
+            .cal-num{
+                color: #645c59;
+            }
+            .cal-btn{
+                display: none;
+            }
+            .unopen-btn{
+                display: block;
+            }
+            &:active{
+                color: darkred;
+                filter: opacity(0.5);
+            }
+        }
+        &.opened{
+            .cal-num{
+                color: #645c59;
+                opacity: 0.5;
+            }
+            img{
+                filter: opacity(0.3);
+            }
+        }
+        &:active{
+            .cal-num{
+                color: red;
+            }
+        }
+        .cal-num{
+            font-family: "BaskervilleMT-italic";
+            font-size: 25px;
+            position: absolute;
+        }
+    }
+    img{
+        width: 100%;
+    }
+    .cal-col-r{
+        padding-right: 5px;
+    }
+    .cal-col-l{
+        padding-left: 5px;
+    }
+    .cal-r1{
+        .cal-sq-1{
+            padding-right: 5px;
+            padding-bottom: 5px;
+            display: inline-block;
+            width: 49%;
+            clear: both;
+            p{
+                top: 8px;
+                width: 100%;
+                text-align: center;
+                padding-right: 5px;
+            }
+        }
+        .cal-sq-2{
+            display: inline-block;
+            width: 51%;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 7px;
+            }
+        }
+        .cal-sq-3{
+            display: inline-block;
+            width: 51%;
+            padding-left: 5px;
+            padding-top: 7px;
+            padding-bottom: 5px;
+            p{
+                top: 17px;
+                width: 100%;
+                text-align: center;
+                padding-right: 7px;
+            }
+        }
+        .cal-sq-4{
+            padding-top: 4px;
+            height: 50px;
+            width: 100%;
+            clear: both;
+            p{
+                top: 10px;
+                width: 100%;
+                left: 28px;
+                padding-right: 5px;
+            }
+        }
+        .cal-sq-5{
+            padding-right: 5px;
+            padding-bottom: 5px;
+            display: inline-block;
+            width: 50%;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 5px;
+            }
+        }
+        .cal-sq-6{
+            padding-left: 5px;
+            padding-bottom: 5px;
+            width: 50%;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 8px;
+            }
+
+        }
+        .cal-sq-7{
+            padding-top: 2px;
+            height: 115px;
+            width: 100%;
+            p{
+                font-size: 45px;
+                top: 30px;
+                left: 15px;
+                text-align: center;
+                padding-right: 8px;
+            }
+        }
+    }
+    .cal-r2{
+        margin-top: 20px;
+        .cal-sq-8{
+            padding-right: 5px;
+            display: inline-block;
+            width: 50%;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 8px;
+            }
+        }
+        .cal-sq-9{
+            display: inline-block;
+            width: 50%;
+            padding-left: 5px;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 5px;
+            }
+        }
+        .cal-sq-10{
+            padding-top: 10px;
+            display: inline-block;
+            width: 100%;
+            p{
+                top: 20px;
+                width: 100%;
+                left: 24px;
+                padding-right: 5px;
+            }
+        }
+        .cal-sq-11{
+            display: inline-block;
+            width: 50%;
+            padding-right: 7px;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 7px;
+            }
+
+        }
+        .cal-sq-12{
+            display: inline-block;
+            width: 50%;
+            padding-left: 5px;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 7px;
+            }
+        }
+        .cal-sq-13{
+            padding-top: 11px;
+            display: inline-block;
+            width: 50%;
+            padding-left: 5px;
+            p{
+                top: 20px;
+                width: 100%;
+                text-align: center;
+                padding-right: 7px;
+            }
+        }
+    }
+    .cal-r3{
+        margin-top: 10px;
+        .cal-sq-14{
+            width: 100%;
+            p{
+                font-size: 45px;
+                top: 20px;
+                left: 20px;
+                padding-right: 7px;
+            }
+        }
+        .cal-sq-15{
+            display: inline-block;
+            width: 50%;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 7px;
+            }
+        }
+        .cal-sq-16{
+            display: inline-block;
+            width: 50%;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 5px;
+            }
+        }
+        .cal-sq-17{
+            padding-top: 8px;
+            padding-right: 5px;
+            display: inline-block;
+            width: 50%;
+            p{
+                top: 20px;
+                width: 100%;
+                text-align: center;
+                padding-right: 7px;
+            }
+        }
+        .cal-sq-18{
+            padding-top: 8px;
+            padding-left: 5px;
+            display: inline-block;
+            width: 50%;
+            p{
+                top: 20px;
+                width: 100%;
+                text-align: center;
+                padding-right: 7px;
+            }
+        }
+    }
+    .cal-r4{
+        margin-top: 10px;
+        .cal-sq-19{
+            padding-bottom: 5px;
+            padding-right: 5px;
+            display: inline-block;
+            width: 50%;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 8px;
+            }
+        }
+        .cal-sq-20{
+            padding-bottom: 5px;
+            padding-left: 5px;
+            display: inline-block;
+            width: 50%;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 5px;
+            }
+        }
+        .cal-sq-21{
+            padding-top: 5px;
+            padding-right: 5px;
+            display: inline-block;
+            width: 50%;
+            p{
+                top: 16px;
+                width: 100%;
+                text-align: center;
+                padding-right: 8px;
+            }
+        }
+        .cal-sq-22{
+            padding-top: 5px;
+            padding-left: 5px;
+            display: inline-block;
+            width: 50%;
+            p{
+                top: 16px;
+                width: 100%;
+                text-align: center;
+                padding-right: 5px;
+            }
+        }
+        .cal-sq-23{
+            padding-right: 5px;
+            padding-bottom: 5px;
+            display: inline-block;
+            width: 50%;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 5px;
+            }
+        }
+        .cal-sq-24{
+            padding-left: 5px;
+            padding-bottom: 5px;
+            display: inline-block;
+            width: 50%;
+            p{
+                top: 10px;
+                width: 100%;
+                text-align: center;
+                padding-right: 5px;
+            }
+        }
+        .cal-sq-25{
+            padding-top: 8px;
+            display: inline-block;
+            width: 100%;
+            p{
+                top: 16px;
+                left: 117px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+.bottom-text{
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+}
+
+
+@media screen and(min-width: 1024px){
+    .calendar-main{
+        background: url('../img/desktop-bg.jpg') no-repeat center bottom;
+        background-size: cover;
+    }
+}
